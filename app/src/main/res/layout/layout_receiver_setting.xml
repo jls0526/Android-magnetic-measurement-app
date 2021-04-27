@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tv_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginTop="3dp"
+        android:paddingBottom="2dp"
+        android:paddingTop="2dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:scrollbars="vertical"
+        android:singleLine="false"
+        android:background="@drawable/textview_border"
+        android:textColor="@color/colorBlack"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <CheckBox
+                android:id="@+id/cb_next_line"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="追加换行符"
+                android:layout_weight="1"/>
+            <CheckBox
+                android:id="@+id/cb_parse"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="解析后显示"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_device_state"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="设备：已断开"
+                android:gravity="center_vertical"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/tv_rx"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Rx:0Bytes"
+                android:gravity="center_vertical"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_if_receive"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="开始接收"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/tv_serial_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="串口通信设置" />
+
+        <TextView
+            android:id="@+id/tv_baud_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="波特率"
+            android:textSize="18sp"
+            android:textColor="@color/colorBlack"
+            android:layout_below="@+id/tv_serial_setting"
+            android:layout_marginTop="10dp"/>
+
+        <Spinner
+            android:id="@+id/sp_baud_rates"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_below="@+id/tv_serial_setting"
+            android:layout_toEndOf="@+id/tv_baud_rate"
+            android:entries="@array/baud_rate" />
+
+        <TextView
+            android:id="@+id/tv_stop_bits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="停止位"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp"
+            android:layout_below="@+id/tv_baud_rate"
+            android:layout_marginTop="10dp"/>
+
+        <Spinner
+            android:id="@+id/sp_stop_bits"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:textSize="18sp"
+            android:layout_below="@+id/tv_baud_rate"
+            android:layout_toEndOf="@+id/tv_stop_bits"
+            android:entries="@array/stop_bits"/>
+
+        <TextView
+            android:id="@+id/tv_data_bits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="数据位"
+            android:textSize="18sp"
+            android:textColor="@color/colorBlack"
+            android:layout_below="@+id/tv_stop_bits"
+            android:layout_marginTop="10dp"/>
+
+        <Spinner
+            android:id="@+id/sp_data_bits"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:textSize="18sp"
+            android:layout_below="@+id/tv_stop_bits"
+            android:layout_toEndOf="@+id/tv_data_bits"
+            android:entries="@array/data_bits"/>
+
+        <TextView
+            android:id="@+id/tv_correct_bits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="校验位"
+            android:textSize="18sp"
+            android:textColor="@color/colorBlack"
+            android:layout_below="@+id/tv_data_bits"
+            android:layout_marginTop="10dp"/>
+
+        <Spinner
+            android:id="@+id/sp_correct_bits"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:textSize="18sp"
+            android:layout_below="@+id/tv_data_bits"
+            android:layout_toEndOf="@+id/tv_correct_bits"
+            android:entries="@array/correct_bits"/>
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

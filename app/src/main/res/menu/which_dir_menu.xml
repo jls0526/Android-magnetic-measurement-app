@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/dir_x"
+        android:icon="@mipmap/ic_launcher"
+        android:title="x轴"/>
+
+    <item
+        android:id="@+id/dir_y"
+        android:icon="@mipmap/ic_launcher"
+        android:title="y轴"/>
+
+    <item
+    android:id="@+id/dir_z"
+    android:icon="@mipmap/ic_launcher"
+    android:title="z轴"/>
+
+    <item
+        android:id="@+id/dir_total"
+        android:icon="@mipmap/ic_launcher"
+        android:title="总磁场强度"/>
+
+</menu>
